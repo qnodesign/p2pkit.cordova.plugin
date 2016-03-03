@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="p2pkit-cordova-plugin-ios" version="0.2.3">
+    <name>P2PKit_Cordova_Plugin_iOS</name>
+    <description>P2PKit Cordova Plugin for iOS</description>
+    <author>qnodesign</author>
+    <license>Apache 2.0 License</license>
+    <keywords>cordova,ios,p2p,p2pkit</keywords>
+    <js-module src="www/p2pkit.js" name="p2pkit">
+        <clobbers target="p2pkit" />
+    </js-module>
+ 	<!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="P2PKit">
+                <param name="ios-package" value="CDVP2PKit"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVP2PKit.h" />
+        <source-file src="src/ios/CDVP2PKit.m" />
+    </platform>
+</plugin>
