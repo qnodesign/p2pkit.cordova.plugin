@@ -1,3 +1,3 @@
 #P2PKit Cordova Plugin
 
-under development
+development not even started yet
